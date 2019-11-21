@@ -58,7 +58,7 @@ PREFERENCIAS<-function(n,m,CLI,LAB,CapCompra,CapVenta,theta){
   }
   
   
-  #Despu?s se prefieren a s? mismos
+  #Despues se prefieren a si mismos
   #Clientes
   for (k in 1:ncol(PrefClie)) {
     MFlujo[nrow(PrefClie)+1,k]<-k
@@ -69,7 +69,7 @@ PREFERENCIAS<-function(n,m,CLI,LAB,CapCompra,CapVenta,theta){
   }
   
   
-  #Los dem?s valores no importan porque ya est?n delimitados por "si mismos"
+  #Los demas valores no importan porque ya estan delimitados por "si mismos"
   resto<-vector()
   for (indi in 1:(n+m)) {
     resto<-append(resto,individuos[-intersect(MFlujo[,indi],individuos)] )
@@ -112,7 +112,7 @@ PREFERENCIAS<-function(n,m,CLI,LAB,CapCompra,CapVenta,theta){
     }
   }
   
-  #Despu?s se prefieren a s? mismos
+  #Despues se prefieren a si mismos
   #Clientes
   for (k in 1:ncol(CLI)) {
     MPref[nrow(CLI)+1,k]<-k
@@ -258,7 +258,7 @@ Parejas<-function(disponible){
 Parejas(disponibles)
 
 #Ingresa la pareja laboratorio-cliente que ya se encontr?
-#OJO: INGRESAR TODAS LAS PAREJAS QUE YA SE ENCONTRAR?N DESPU?S
+#OJO: INGRESAR TODAS LAS PAREJAS QUE YA SE ENCONTRARON DESPUES
 #DE CADA ETAPA 
 Reordenamiento(5,1)
    
