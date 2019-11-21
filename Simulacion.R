@@ -174,7 +174,7 @@ Reordenamiento<-function(C,L){
   return(PREFERENCIAS)
 }
 
-#############***********************SIMULACI?N***********************######
+#############***********************SIMULACION***********************######
 
 #Parametros
 n<-40 #Numero de clientes
